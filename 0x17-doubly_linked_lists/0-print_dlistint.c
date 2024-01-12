@@ -3,7 +3,7 @@
  * print_dlistint - prints the number in a linked list
  * @h: the first node
  *
- * return: the number of nodes in a linked-list
+ * Return: the number of nodes in a linked-list
 */
 size_t print_dlistint(const dlistint_t *h)
 {

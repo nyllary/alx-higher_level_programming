@@ -1,12 +1,27 @@
 #!/usr/bin/python3
+"""
+A class Rectangle
+"""
+
 
 class Rectangle:
+    """Represents a rec. class"""
     def __init__(self, width=0, height=0):
+        """
+        initializes a new rec.
+
+        Args:
+            width - how long the rec is
+            height - how tall the rec is
+        """
+
         self.width = width
         self.height = height
 
     @property
     def width(self):
+        """Represents the width"""
+
         return self.__width
 
     @width.setter
@@ -20,6 +35,7 @@ class Rectangle:
 
     @property
     def height(self):
+        """Gets the height of the rec"""
         return self.__height
 
     @height.setter

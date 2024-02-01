@@ -1,11 +1,28 @@
 #!/usr/bin/python3
+"""
+A module containing one class
+"""
+
+
 class Rectangle:
+    """A rectangle class"""
     def __init__(self, width=0, height=0):
+        """
+        init a class which defines a rectangle
+        the rec. is about eval
+
+        Args:
+            width - the width
+            height - the hieght
+        """
+
         self.width = width
         self.height = height
 
     @property
     def width(self):
+        """Gets the width of the rec."""
+
         return self.__width
 
     @width.setter
@@ -19,6 +36,8 @@ class Rectangle:
 
     @property
     def height(self):
+        """Gets the height of the rec"""
+
         return self.__height
 
     @height.setter

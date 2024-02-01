@@ -63,3 +63,10 @@ class Rectangle:
             return ""
         else:
             return "\n".join(["#" * self.width] * self.height)
+
+    def __repr__(self):
+        """
+        This method returns a string representation of the rec. than can
+        be used to recreate a new instance by usind eval().
+        """
+        return "Rectangle({}, {})".format(self.width, self.height)

@@ -1,11 +1,29 @@
 #!/usr/bin/python3
+"""
+A rectangle class which checks for the area and
+the perimeter of a rectangle
+"""
+
+
 class Rectangle:
+    """Represents a rectangle"""
+
     def __init__(self, width=0, height=0):
+        """
+        init. a new rectangle
+
+        perimeters:
+            width: the longest side of the rectangle
+            height: how tall the rectangle is
+        """
+
         self.width = width
         self.height = height
 
     @property
     def width(self):
+        """Represents the width of the rec."""
+
         return self.__width
 
     @width.setter
@@ -19,6 +37,8 @@ class Rectangle:
 
     @property
     def height(self):
+        """Reoresents the height of the rec."""
+
         return self.__height
 
     @height.setter
@@ -31,9 +51,13 @@ class Rectangle:
             self.__height = value
 
     def area(self):
+        """Gets the area of the rec."""
+
         return self.width * self.height
 
     def perimeter(self):
+        """Gets the total surface area of the rec"""
+
         if self.width == 0 or self.height == 0:
             return 0
         else:

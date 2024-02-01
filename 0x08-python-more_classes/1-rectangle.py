@@ -1,11 +1,29 @@
 #!/usr/bin/python3
+"""
+A module that defines a real rectangle
+the width and the height
+"""
+
+
 class Rectangle:
+    """Representts a rectangle"""
+
     def __init__(self, width=0, height=0):
+        """
+        Initializes a new rectangle
+
+        peremeters:
+            width: The width of the rectangle
+            height: the height of the retangle
+
+        """
         self.width = width
         self.height = height
 
     @property
     def width(self):
+        """Gets the width of the rectangle"""
+
         return self.__width
 
     @width.setter
@@ -19,6 +37,8 @@ class Rectangle:
 
     @property
     def height(self):
+        """Gets the height of the rectangle"""
+
         return self.__height
 
     @height.setter
